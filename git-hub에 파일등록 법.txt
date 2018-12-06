@@ -1,0 +1,37 @@
+1. 초기화
+▣  git init : git-hub에 프로젝트를 등록하기 위한 초기화작업 
+
+2. 정보 설정
+▣  git config --local user.name juhooL(your git ID)
+▣  git config --local user.email juhoon12@nate.com
+
+3. 파일 생성
+vi 생성이름.확장자 
+i :내용 끼워넣기
+esc후 :명령어
+:w => 저장하기
+:q => (저장하지않고)끝내기 
+:q! => 강제종료
+:wq => 저장후 종료
+=============================(위 내용은 최초 한번만)==================
+
+3. 파일등록
+▣  git add .
+▣  git commit -m first
+4. 복사후 shift + ins 하면 자동으로 등록됌 (enter만 누르면 됌)
+▣  git remote add origin https://github.com/JuHoonL/ClassAndMethod.git
+▣  git push -u origin master
+
+▣  rm -rf : rm 파일을 지우는 명령어, rf 폴더를 지우는 명령어 
+▣  rm -rf .폴더명 : 해당 폴더만 지움 
+▣  git remote remove origin : 업로드 경로 잘못 지정했을 때 지우는 명령어
+
+▣  gitignore 파일을 복사후 넣어 준 후 마지막에 
+	git push -u origin master를 넣어주고 
+	올리면 필요없는 파일은 올리지 않음
+
+▣  파일 수정후 재 업로드 
+    git add .
+	git commit -m "해당 파일명"
+	git push -u origin master
+
