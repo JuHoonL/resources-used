@@ -1,4 +1,4 @@
-1. 초기화
+﻿1. 초기화
 ▣  git init : git-hub에 프로젝트를 등록하기 위한 초기화작업 
 
 2. 정보 설정
@@ -29,9 +29,13 @@ esc후 :명령어
 ▣  gitignore 파일을 복사후 넣어 준 후 마지막에 
 	git push -u origin master를 넣어주고 
 	올리면 필요없는 파일은 올리지 않음
+	(최초 이외에는 git push만 쓰면 됌)
 
 ▣  파일 수정후 재 업로드 
     git add .
 	git commit -m "해당 파일명"
 	git push -u origin master
 
+▣  파일 복제(원하는 폴더에 해당 github의 파일을 불러옴)
+    git clone 해당 주소 ( 최초에 사용 )
+    git pull (원본이 변경시 복제파일에 업데이트 시 사용)
